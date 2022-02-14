@@ -11,6 +11,7 @@
 		E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */; };
 		E1660E5127BA4CDE00F8BAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */; };
 		E1660E5427BA4CDE00F8BAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1660E5327BA4CDE00F8BAE6 /* Preview Assets.xcassets */; };
+		E1660E5B27BA519A00F8BAE6 /* ImageFromAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E5A27BA519A00F8BAE6 /* ImageFromAssetsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1660E5327BA4CDE00F8BAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1660E5A27BA519A00F8BAE6 /* ImageFromAssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromAssetsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */,
 				E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */,
 				E1660E5227BA4CDE00F8BAE6 /* Preview Content */,
+				E1660E5A27BA519A00F8BAE6 /* ImageFromAssetsView.swift */,
 			);
 			path = MySwiftUISamples;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */,
+				E1660E5B27BA519A00F8BAE6 /* ImageFromAssetsView.swift in Sources */,
 				E1660E4D27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUISamples/Preview Content\"";
+				DEVELOPMENT_TEAM = 95FLA3J62X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -297,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUISamples/Preview Content\"";
+				DEVELOPMENT_TEAM = 95FLA3J62X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
