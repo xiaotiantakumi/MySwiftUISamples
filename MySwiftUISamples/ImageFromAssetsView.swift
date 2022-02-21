@@ -21,10 +21,9 @@ struct ImageFromAssetsView: View {
         VStack{
             Text("ImageViewで直接生成")
             Image("icons8-swiftui-240")
-                .onAppear{
-                    imageFromAsset = UIImage(named:"icons8-swiftui-240")
-                }
-            
+        }
+        .onAppear{
+            imageFromAsset = UIImage(named:"icons8-swiftui-240")
         }
     }
 }
