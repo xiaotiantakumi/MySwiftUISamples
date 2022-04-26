@@ -9,8 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                Section(header: Text("サンプル")) {
+                    NavigationLink(destination: ImageSelectView()) {
+                        Text("ImageSelectView")
+                    }
+                    NavigationLink(destination: ImageScaleView()) {
+                        Text("ImageScaleView")
+                    }
+                    NavigationLink(destination: ImageScaleView2()) {
+                        Text("ImageScaleView2")
+                    }
+                }
+            }
+        }
     }
 }
 

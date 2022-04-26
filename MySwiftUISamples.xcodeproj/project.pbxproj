@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB7B79263375A2F4E2D0492A /* ImageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B72CCAC2F0F1C4B6D3274 /* ImageSelectView.swift */; };
+		CB7B71C5111A7858603DAA58 /* ImageFromAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B74ED745908CF47FE4887 /* ImageFromAssetsView.swift */; };
+		CB7B72E671C0DDB2DA3F4E6D /* ImageScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7683785B03D73741A1C2 /* ImageScaleView.swift */; };
+		CB7B74CC1F0B970FA3F3FAC6 /* ImageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7009518AA3C01BBAA430 /* ImageSelectView.swift */; };
 		CB7B7F220E5B22E510FA5CE9 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7511B6136F0CAB89481C /* GestureView.swift */; };
-		CB7B7F319C4BB59FA691DA9D /* ImageScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7F88E18101B1EDE49CEA /* ImageScaleView.swift */; };
 		E1660E4D27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E4C27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift */; };
 		E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */; };
 		E1660E5127BA4CDE00F8BAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */; };
 		E1660E5427BA4CDE00F8BAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1660E5327BA4CDE00F8BAE6 /* Preview Assets.xcassets */; };
-		E1660E5B27BA519A00F8BAE6 /* ImageFromAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E5A27BA519A00F8BAE6 /* ImageFromAssetsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB7B72CCAC2F0F1C4B6D3274 /* ImageSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectView.swift; sourceTree = "<group>"; };
+		CB7B7009518AA3C01BBAA430 /* ImageSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectView.swift; sourceTree = "<group>"; };
+		CB7B74ED745908CF47FE4887 /* ImageFromAssetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFromAssetsView.swift; sourceTree = "<group>"; };
 		CB7B7511B6136F0CAB89481C /* GestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
-		CB7B7F88E18101B1EDE49CEA /* ImageScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleView.swift; sourceTree = "<group>"; };
+		CB7B7683785B03D73741A1C2 /* ImageScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleView.swift; sourceTree = "<group>"; };
 		E1660E4927BA4CDD00F8BAE6 /* MySwiftUISamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUISamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1660E4C27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUISamplesApp.swift; sourceTree = "<group>"; };
 		E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1660E5327BA4CDE00F8BAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E1660E5A27BA519A00F8BAE6 /* ImageFromAssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromAssetsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,16 @@
 				CB7B7511B6136F0CAB89481C /* GestureView.swift */,
 			);
 			path = AppleSample;
+			sourceTree = "<group>";
+		};
+		CB7B7FDF0D68BF7D705894BA /* ImageScale */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B7683785B03D73741A1C2 /* ImageScaleView.swift */,
+				CB7B74ED745908CF47FE4887 /* ImageFromAssetsView.swift */,
+				CB7B7009518AA3C01BBAA430 /* ImageSelectView.swift */,
+			);
+			path = ImageScale;
 			sourceTree = "<group>";
 		};
 		E1660E4027BA4CDD00F8BAE6 = {
@@ -71,10 +81,8 @@
 				E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */,
 				E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */,
 				E1660E5227BA4CDE00F8BAE6 /* Preview Content */,
-				E1660E5A27BA519A00F8BAE6 /* ImageFromAssetsView.swift */,
-				CB7B72CCAC2F0F1C4B6D3274 /* ImageSelectView.swift */,
-				CB7B7F88E18101B1EDE49CEA /* ImageScaleView.swift */,
 				CB7B751ACC0DE5AB3A2AF9DB /* AppleSample */,
+				CB7B7FDF0D68BF7D705894BA /* ImageScale */,
 			);
 			path = MySwiftUISamples;
 			sourceTree = "<group>";
@@ -158,11 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */,
-				E1660E5B27BA519A00F8BAE6 /* ImageFromAssetsView.swift in Sources */,
 				E1660E4D27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift in Sources */,
-				CB7B79263375A2F4E2D0492A /* ImageSelectView.swift in Sources */,
-				CB7B7F319C4BB59FA691DA9D /* ImageScaleView.swift in Sources */,
 				CB7B7F220E5B22E510FA5CE9 /* GestureView.swift in Sources */,
+				CB7B72E671C0DDB2DA3F4E6D /* ImageScaleView.swift in Sources */,
+				CB7B71C5111A7858603DAA58 /* ImageFromAssetsView.swift in Sources */,
+				CB7B74CC1F0B970FA3F3FAC6 /* ImageSelectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +320,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -343,7 +351,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

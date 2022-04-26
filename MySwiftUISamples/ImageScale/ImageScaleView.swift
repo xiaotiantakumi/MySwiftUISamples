@@ -55,24 +55,25 @@ struct ImageScaleView2: View {
     @State var isTapped: Bool = false
 
     var body: some View {
-        // MagnificationGestureは拡大動作を認識し、拡大量を追跡するジェスチャーです。
+        // MagnificationGestureは拡大動作(二本指で拡大する動作)を認識し、拡大量を追跡するジェスチャーです。
         let magnify = MagnificationGesture(minimumScaleDelta: 0.2)
+                // タップ中の変化を刻々とイベントとして補足する。拡大量を閾値としてminimumScaleDeltaで設定する。
                 .onChanged { value in
+                    // 拡大量を計算
                     let resolvedDelta = value / self.lastValue
                     self.lastValue = value
                     let newScale = self.scale * resolvedDelta
+                    // 最大値と最小値の範囲に収まるようにする
                     self.scale = min(self.maxScale, max(self.minScale, newScale))
-
                     print("delta=\(value) resolvedDelta=\(resolvedDelta)  newScale=\(newScale)")
                 }
-        // 拡大位置を変更する時に使用する。
+        // 拡大の起点位置を変更する時に使用する。
         let gestureDrag = DragGesture(minimumDistance: 0, coordinateSpace: .local)
                 .onChanged { (value) in
                     self.tapPoint = value.startLocation
                     self.draged = CGSize(width: value.translation.width + self.prevDraged.width,
                             height: value.translation.height + self.prevDraged.height)
                 }
-
         return GeometryReader { geo in
             Image("icons8-swiftui-240")
                     .resizable().scaledToFit().animation(.default)
@@ -83,6 +84,7 @@ struct ImageScaleView2: View {
                                         // ここはダブルタップ時に呼ばれる
                                         print("TapGesture onEnded")
                                         self.isTapped.toggle()
+                                        // 拡大縮小をタップで切り替える
                                         if self.scale > 1 {
                                             self.scale = 1
                                         } else {
@@ -106,12 +108,9 @@ struct ImageScaleView2: View {
                         self.postArranging(translation: CGSize.zero, in: parent)
                     })
         }
-//                .frame(height: 300)
-//                .clipped()
-//                .background(Color.gray)
-
     }
-/// 画像のドラッグでどこか別のところに行ってしまう問題を解決している？
+
+    /// 画像のドラッグでどこか別のところに行ってしまう問題を解決している？
     private func postArranging(translation: CGSize, in parent: CGRect) {
         let scaled = self.scale
         let parentWidth = parent.maxX
@@ -140,5 +139,4 @@ struct ImageScaleView2: View {
         self.draged = resolved
         self.prevDraged = resolved
     }
-
 }
