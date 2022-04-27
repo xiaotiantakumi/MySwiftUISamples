@@ -8,22 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isPresented = false
     var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("サンプル")) {
-                    NavigationLink(destination: ImageSelectView()) {
-                        Text("ImageSelectView")
-                    }
-                    NavigationLink(destination: ImageScaleView()) {
-                        Text("ImageScaleView")
-                    }
-                    NavigationLink(destination: ImageScaleView2()) {
-                        Text("ImageScaleView2")
-                    }
-                }
-            }
-        }
+        EmptyView()
     }
 }
 

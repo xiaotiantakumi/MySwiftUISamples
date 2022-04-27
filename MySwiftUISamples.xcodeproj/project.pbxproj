@@ -15,6 +15,9 @@
 		E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */; };
 		E1660E5127BA4CDE00F8BAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */; };
 		E1660E5427BA4CDE00F8BAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1660E5327BA4CDE00F8BAE6 /* Preview Assets.xcassets */; };
+		E1F735C42817B01B0018EF45 /* SheetOpenSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F735C32817B01B0018EF45 /* SheetOpenSample.swift */; };
+		E1F735C62817D4BE0018EF45 /* SubTitleLikeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F735C52817D4BE0018EF45 /* SubTitleLikeInput.swift */; };
+		E1F735C82818C49E0018EF45 /* RadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F735C72818C49E0018EF45 /* RadioButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1660E5027BA4CDE00F8BAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1660E5327BA4CDE00F8BAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1F735C32817B01B0018EF45 /* SheetOpenSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetOpenSample.swift; sourceTree = "<group>"; };
+		E1F735C52817D4BE0018EF45 /* SubTitleLikeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLikeInput.swift; sourceTree = "<group>"; };
+		E1F735C72818C49E0018EF45 /* RadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				E1660E5227BA4CDE00F8BAE6 /* Preview Content */,
 				CB7B751ACC0DE5AB3A2AF9DB /* AppleSample */,
 				CB7B7FDF0D68BF7D705894BA /* ImageScale */,
+				E1F735C32817B01B0018EF45 /* SheetOpenSample.swift */,
+				E1F735C52817D4BE0018EF45 /* SubTitleLikeInput.swift */,
+				E1F735C72818C49E0018EF45 /* RadioButtons.swift */,
 			);
 			path = MySwiftUISamples;
 			sourceTree = "<group>";
@@ -165,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F735C82818C49E0018EF45 /* RadioButtons.swift in Sources */,
 				E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */,
 				E1660E4D27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift in Sources */,
+				E1F735C42817B01B0018EF45 /* SheetOpenSample.swift in Sources */,
+				E1F735C62817D4BE0018EF45 /* SubTitleLikeInput.swift in Sources */,
 				CB7B7F220E5B22E510FA5CE9 /* GestureView.swift in Sources */,
 				CB7B72E671C0DDB2DA3F4E6D /* ImageScaleView.swift in Sources */,
 				CB7B71C5111A7858603DAA58 /* ImageFromAssetsView.swift in Sources */,
@@ -311,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +355,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
