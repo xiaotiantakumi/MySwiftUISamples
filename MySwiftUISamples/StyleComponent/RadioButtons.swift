@@ -31,7 +31,7 @@ struct RadioButtons: View {
     /**
      選択時の色
      */
-    @State var  selectedColor:Color = .orange
+    @State var  selectedColor:Color = .blue
     /**
      非選択時の色
      */
