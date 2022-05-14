@@ -14,9 +14,7 @@ struct MySwiftUISamplesApp: App {
     @State var selectedIndex2 = -1
     var body: some Scene {
         WindowGroup {
-            //SubTitleLikeInput(inValue: $text)
-            RadioButtons(marginX: 30,marginY: 0,selectedIndex: $selectedIndex)
-            RadioButtons(cornerRadius: 10,recWidth: 50,recHeight: 50,marginX: 12,marginY: 12,selectedIndex: $selectedIndex2)
+            XMLParserSampleView()
         }
     }
 }
