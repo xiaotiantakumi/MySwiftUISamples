@@ -13,7 +13,7 @@ struct MySwiftUISamplesApp: App {
     @State var selectedIndex2 = -1
     var body: some Scene {
         WindowGroup {
-            TextFieldUsageView()
+            UITextUsageView()
         }
     }
 }
