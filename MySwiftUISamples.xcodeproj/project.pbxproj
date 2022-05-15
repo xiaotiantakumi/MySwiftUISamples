@@ -12,10 +12,12 @@
 		CB7B72E671C0DDB2DA3F4E6D /* ImageScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7683785B03D73741A1C2 /* ImageScaleView.swift */; };
 		CB7B73944D68708D81A2F408 /* SubTitleLikeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7D6E88E760EA91085FF9 /* SubTitleLikeInput.swift */; };
 		CB7B74CC1F0B970FA3F3FAC6 /* ImageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7009518AA3C01BBAA430 /* ImageSelectView.swift */; };
+		CB7B74EE8958BF1785675502 /* TextFieldUsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7A5CCCF7DCCC2F21DFA2 /* TextFieldUsageView.swift */; };
 		CB7B75E581684D898A3A2866 /* ImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B78220DF462B52D3A0F28 /* ImageSlider.swift */; };
 		CB7B77BC9D387E09D70E710A /* SheetOpenSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B796F5A76A2EE7CDE4024 /* SheetOpenSample.swift */; };
 		CB7B7966D1124484E8F6EAC8 /* RadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B77F93871A9493611CA7F /* RadioButtons.swift */; };
 		CB7B7A5B69C42EC38331A652 /* XMLParserSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7E3519D11A67EA1857CE /* XMLParserSampleView.swift */; };
+		CB7B7E62CB1AFA196597475E /* TextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B71D7BA2D5F12BCBF5C98 /* TextFieldContainer.swift */; };
 		CB7B7F220E5B22E510FA5CE9 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B7511B6136F0CAB89481C /* GestureView.swift */; };
 		E1660E4D27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E4C27BA4CDD00F8BAE6 /* MySwiftUISamplesApp.swift */; };
 		E1660E4F27BA4CDD00F8BAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1660E4E27BA4CDD00F8BAE6 /* ContentView.swift */; };
@@ -25,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		CB7B7009518AA3C01BBAA430 /* ImageSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectView.swift; sourceTree = "<group>"; };
+		CB7B71D7BA2D5F12BCBF5C98 /* TextFieldContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldContainer.swift; sourceTree = "<group>"; };
 		CB7B74ED745908CF47FE4887 /* ImageFromAssetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFromAssetsView.swift; sourceTree = "<group>"; };
 		CB7B7511B6136F0CAB89481C /* GestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
 		CB7B763F1ACEDD575183CAC9 /* MyXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyXMLParser.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		CB7B77F93871A9493611CA7F /* RadioButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtons.swift; sourceTree = "<group>"; };
 		CB7B78220DF462B52D3A0F28 /* ImageSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSlider.swift; sourceTree = "<group>"; };
 		CB7B796F5A76A2EE7CDE4024 /* SheetOpenSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetOpenSample.swift; sourceTree = "<group>"; };
+		CB7B7A5CCCF7DCCC2F21DFA2 /* TextFieldUsageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldUsageView.swift; sourceTree = "<group>"; };
 		CB7B7D6E88E760EA91085FF9 /* SubTitleLikeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTitleLikeInput.swift; sourceTree = "<group>"; };
 		CB7B7E3519D11A67EA1857CE /* XMLParserSampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserSampleView.swift; sourceTree = "<group>"; };
 		E1660E4927BA4CDD00F8BAE6 /* MySwiftUISamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUISamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +91,15 @@
 			path = StyleComponent;
 			sourceTree = "<group>";
 		};
+		CB7B7DB26BC804136500ADDA /* TextFieldContainer */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B71D7BA2D5F12BCBF5C98 /* TextFieldContainer.swift */,
+				CB7B7A5CCCF7DCCC2F21DFA2 /* TextFieldUsageView.swift */,
+			);
+			path = TextFieldContainer;
+			sourceTree = "<group>";
+		};
 		CB7B7FDF0D68BF7D705894BA /* ImageScale */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 				CB7B7A923F80D6B8D9EA3DEA /* StyleComponent */,
 				CB7B76D317F30A752D400288 /* ImageSlider */,
 				CB7B78C4C33882F5992CFC3A /* XMLParser */,
+				CB7B7DB26BC804136500ADDA /* TextFieldContainer */,
 			);
 			path = MySwiftUISamples;
 			sourceTree = "<group>";
@@ -219,6 +233,8 @@
 				CB7B75E581684D898A3A2866 /* ImageSlider.swift in Sources */,
 				CB7B7A5B69C42EC38331A652 /* XMLParserSampleView.swift in Sources */,
 				CB7B71DA00F1D2CF570CFA89 /* MyXMLParser.swift in Sources */,
+				CB7B7E62CB1AFA196597475E /* TextFieldContainer.swift in Sources */,
+				CB7B74EE8958BF1785675502 /* TextFieldUsageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

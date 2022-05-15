@@ -9,12 +9,11 @@ import SwiftUI
 
 @main
 struct MySwiftUISamplesApp: App {
-    @State var text = ""
     @State var selectedIndex = -1
     @State var selectedIndex2 = -1
     var body: some Scene {
         WindowGroup {
-            XMLParserSampleView()
+            TextFieldUsageView()
         }
     }
 }
