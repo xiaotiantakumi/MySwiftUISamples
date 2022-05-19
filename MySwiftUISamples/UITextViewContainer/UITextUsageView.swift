@@ -12,21 +12,27 @@ import Combine
 struct UITextUsageView: View {
     @State var text = ""
     @State var cursorPosition = 0
-    private var didChange = PassthroughSubject<CursorChangeableUIViewContext, Never>()
+    private var cursorChangeSubject = PassthroughSubject<CursorChangeableUIViewContext, Never>()
 
     var body: some View {
         VStack{
-            UITextViewContainer(didChange: didChange,text: $text, curPosition: $cursorPosition)
+            UITextViewContainer(cursorChangeSubject: cursorChangeSubject,text: $text, cursorPosition: $cursorPosition)
                     .frame(height: 300)
                     .font(.title).border(.white, width: 1)
-            Spacer()
-            Button(action:{
-                self.didChange.send(CursorChangeableUIViewContext(type:.changeCursorPosition,direction: .left, offset: 1))
-            }){
-                Text("left")
+            HStack{
+                Button(action:{
+                    self.cursorChangeSubject.send(CursorChangeableUIViewContext(type:.changeCursorPosition,direction: .left, offset: 1))
+                }){
+                    Text("left").frame().background(.white).padding()
+                }
+                Button(action:{
+                    self.cursorChangeSubject.send(CursorChangeableUIViewContext(type:.changeCursorPosition,direction: .right, offset: 1))
+                }){
+                    Text("right")
+                }
             }
+            Spacer()
         }
         Text(cursorPosition.description)
-
     }
 }

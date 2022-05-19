@@ -30,10 +30,10 @@ class CursorChangeableUITextView: UITextView {
 }
 
 struct UITextViewContainer: UIViewRepresentable {
-    var didChange: PassthroughSubject<CursorChangeableUIViewContext, Never>
+    var cursorChangeSubject: PassthroughSubject<CursorChangeableUIViewContext, Never>
     @State var cancellable: AnyCancellable? = nil
     @Binding var text : String
-    @Binding var curPosition : Int
+    @Binding var cursorPosition: Int
     enum ApplyTypeEnum {
         case changeCursorPosition
     }
@@ -49,17 +49,14 @@ struct UITextViewContainer: UIViewRepresentable {
         inneruiTextView.delegate = context.coordinator
         context.coordinator.setup(inneruiTextView)
 
-        // doing it in `main` thread is required to avoid the state being modified during
-        // a view update
+        // ここはメインスレッドで実行する必要があるようだ
         DispatchQueue.main.async {
             // very important to capture it as a variable, otherwise it'll be short lived.
-            self.cancellable = didChange.sink { (value) in
+            self.cancellable = cursorChangeSubject.sink { (value) in
                 print("Received: \(value)")
 
-                // here you can do a switch case to know which method to call
-                // on your UIKit class, example:
+                // こちらでどのメソッドが呼び出されたかをみて実施する
                 if (value.type == ApplyTypeEnum.changeCursorPosition) {
-                    // call your function!
                     inneruiTextView.changeCursorPosition(direction: value.direction, offset: value.offset)
                 }
             }
@@ -96,7 +93,7 @@ struct UITextViewContainer: UIViewRepresentable {
             // selectedTextRange.startはUITextPosition型なのでそこからIntにするにはこうする
             let cursorPosition = uiTextView.offset(from: uiTextView.beginningOfDocument, to: selectedTextRange.start)
             //print(cursorPosition)
-            self.parent.curPosition = cursorPosition
+            self.parent.cursorPosition = cursorPosition
         }
     }
 }
